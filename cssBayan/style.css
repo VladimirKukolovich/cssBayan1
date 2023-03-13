@@ -26,17 +26,23 @@ body {
 }
 @media(max-width: 821px){
   h1{
-    margin: .8rem 0;
+    font-size: 1.5rem;
   }
 }
-@media(max-width: 821px){
+@media(max-width: 321px){
   h1{
-    font-size: 1.5rem;
+    margin: .8rem 0;
+    font-size: 1.4rem;
   }
 }
 @media(max-width: 821px){
   span{
-    font-size: .7rem;
+    font-size: .95rem;
+  }
+}
+@media(max-width: 321px){
+  span{
+    font-size: .9rem;
   }
 }
 .accordion {
@@ -100,8 +106,6 @@ body {
     width: 65vw;
   }
 }
-
-
 
 .text{
   text-align: start;
