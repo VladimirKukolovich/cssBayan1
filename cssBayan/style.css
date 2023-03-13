@@ -86,13 +86,10 @@ body {
   width: 20vw;
   visibility: hidden;
   opacity: 0;
-  transition: 01s opacity;
+  transition: 1s opacity;
   border-radius: .7rem;
 }
-.picture img:hover{
-  width: 22vw;
-  transition: .5s;
-}
+
 @media(max-width: 821px){
   .picture img{
     width: 45vw;
@@ -104,15 +101,8 @@ body {
   }
 }
 
-.picture:hover{
-  height: fit-content;
-  padding: .5rem 0;
-  transition: .7s;
-}
-.picture:hover > img{
-  opacity: 1;
-  visibility: visible;
-}
+
+
 .text{
   text-align: start;
   cursor: pointer;
@@ -120,9 +110,7 @@ body {
 label{
   align-self: center;     
 }
-.text:hover{
-  color: rgb(116, 185, 249);
-}
+
 .check{
   display:none;
 }
@@ -131,6 +119,41 @@ label{
   display: none;
   cursor: pointer;
 }
+@media (min-width:821px) {
+  .text:hover{
+    color: rgb(116, 185, 249);
+  }
+  .picture:hover > img{
+    opacity: 1;
+    visibility: visible;
+  }
+  .picture img:hover{
+    width: 24vw;
+    transition: .7s;
+  }
+  .picture:hover{
+    height: fit-content;
+    padding: .5rem 0;
+    transition: .7s;
+  }
+  .accordion_wrapper:hover .svg_icons{
+    opacity: 1;
+    visibility: visible;
+  }
+  .picture:hover{
+    height: fit-content;
+    padding: .5rem 0;
+    transition: .7s;
+  }
+  .icon_checked:hover{
+    transform: rotate(135deg);
+    transition: .7s;
+  }
+  .accordion_wrapper:hover .svg_icons{
+    opacity: 1;
+    visibility: visible;
+  }
+  };
 @media(max-width: 321px){
   .svg_icons{
     width: 1.2rem;
@@ -144,19 +167,15 @@ label{
 @media(max-width: 821px){
   .svg_icons{
     width: 1.5rem;
+    opacity: 1;
+    visibility: visible;
   }
 }
-.icon_checked:hover{
-  transform: rotate(135deg);
-  transition: .7s;
-}
+
 .icon_delete{
   cursor: pointer;
 }
-.accordion_wrapper:hover .svg_icons{
-  opacity: 1;
-  visibility: visible;
-}
+
 
 .item_text{
   display: flex;
