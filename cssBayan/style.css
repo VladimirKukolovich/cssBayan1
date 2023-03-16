@@ -121,7 +121,7 @@ label{
   display: none;
   cursor: pointer;
 }
-@media (min-width:821px) {
+@media (hover: hover) {
   .text:hover{
     color: rgb(116, 185, 249);
   }
